@@ -17,7 +17,7 @@ In this problem, we are tasked to create a 10x10 array that includes the squares
 To code this problem, we need to create the 10x10 array first and store it in a variable, then proceed to check the array for the numbers divisible by 3. These numbers can now be inputted in a separate array and saved in the .npy file. Additionally, I made sure to print the two arrays so we can check if the arrays generated are logically correct.
 
 ## CODE ##
-![carbon (2)](https://github.com/user-attachments/assets/2dabd0bd-6320-4956-8306-ddeeb52e066d)
+![carbon (5)](https://github.com/user-attachments/assets/71b062ed-ff40-49d9-b802-0674cba723c1)
 
 ## OUTPUT ##
 ![carbon (4)](https://github.com/user-attachments/assets/5db3990c-926b-4662-8e7d-2aa5ae3b276f)
