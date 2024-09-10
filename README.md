@@ -10,7 +10,7 @@ In this problem, we are tasked to create a 5x5 array and store it in a variable.
 ![carbon](https://github.com/user-attachments/assets/2b72b1b0-8abe-469d-862c-942c66897690)
 
 ## OUTPUT ##
-![carbon (3)](https://github.com/user-attachments/assets/aa0f9373-31f2-48e5-9e12-9aab5919aff5)
+![carbon (6)](https://github.com/user-attachments/assets/1a9dd15e-852e-438e-b030-ef27b8ae6179)
 
 ## No. 2: Divisble by 3 Problem ##
 In this problem, we are tasked to create a 10x10 array that includes the squares of the first 100 integers. In the 10x10 array, we are then tasked to find the numbers divisible by 3 and save it in another array and save it in a .npy file. 
