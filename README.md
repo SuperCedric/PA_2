@@ -1,10 +1,19 @@
-# Programming Assignment #2 (Numerical Python) #
+<a name="top"></a>
+
+# PA 2: NUMERICAL PYTHON # 
 This repository includes my solution to the two given problems involving the Numpy library. Respectively, the first and second problem are the *Normalization Problem* and the *Divisible by 3 Problem*.
 
-## No. 1: Normalization Problem ##
+### GIVEN PROBLEMS ###
+#### 1. Normalization Problem ####
+  - In this problem, we are tasked to create a 5x5 array, `X`, containing random numbers and normalize it by subtracting the mean and dividing by the standard deviation. Use `.mean()` and `.std()` for element-wise calculations, and save the normalized array as `X_normalized.npy`.
+#### 2. Divisible by 3 Problem ####
+   - Create a 10x10 array with the squares of the first 100 positive integers. Identify all elements divisible by 3 and save the result as `div_by_3.npy`.
+
+## 1️⃣ Normalization Problem ##
 Normalization, simply put, is a way to clean up a collection of data to make it **clearer** and **more machine-readable**.
 
-In this problem, we are tasked to create a 5x5 array containing numbers. I used the ".random.rand()" function in order to create the array so that the user won't have to input 25 numbers in succession. I stored this array into a variable named "X," as tasked by the problem. I then used the .mean and .std functions to find each row's mean and standard deviation, hence why the parameters are "axis=0". I then used these variables along with each data in X to calculate the normalized version of the X array and stored the normalized array in the variable "X_Normalized". This was then saved to a file named "X_Normalized.npy". Lastly, i printed the normalized array so i can verify any syntax errors or logical errors.
+### Documentation ###
+In this task, a 5x5 array, stored in variable `X`, was generated using the `.random.rand()` function to avoid manual input. The array was normalized by calculating the mean and standard deviation for each row using `.mean()` and `.std()` with `axis=0`. The normalized array was stored in `X_Normalized` and saved as `X_Normalized.npy`. Finally, the normalized array was printed to verify correctness
 
 ## CODE ##
 ```python
@@ -26,7 +35,7 @@ X_Normalized
 ```
 
 ## OUTPUT ##
-```python
+```
 array([[ 1.37056571,  0.92442838,  1.04155734, -0.90441686,  0.72807555],
        [ 0.69595613, -0.42394752, -0.35225163, -0.67510097,  0.4520398 ],
        [-1.17290787, -1.10154428, -1.04611764, -0.84101816,  1.1971176 ],
@@ -34,11 +43,12 @@ array([[ 1.37056571,  0.92442838,  1.04155734, -0.90441686,  0.72807555],
        [ 0.20977845,  1.43447665,  1.32580686,  1.42176269, -1.2471708 ]])
 ```
 
-## No. 2: Divisble by 3 Problem ##
+## 2️⃣ Divisible by 3 Problem ##
 The Divisible by 3 Problem, in my opinion, was an easier task compared to the Normalization problem.
 
-In this problem, we are tasked to create a 10x10 array that includes the squares of the first 100 integers. In the 10x10 array, we are then tasked to find the numbers divisible by 3, save it in another array, and save it in a .npy file. 
-To code this problem, we need to create the 10x10 array first and store it in variable "A". For efficiency, I made sure that the function to create the 10x10 array is created in just 1 line. We can then proceed to check the array for the numbers divisible by 3. These numbers can now be inputted in a separate array, stored in the variable "div". I reshaped the div array to a 3x11 array to make it more pleasant and readable for the user. I then saved this in the .npy file. Additionally, I made sure to print the two arrays so we can check if the arrays generated are logically correct.
+### Documentation ###
+
+To code this problem, a 10x10 array, `A` was created in one line for efficiency. Next, elements divisible by 3 were extracted and stored in a new array, `div`, which was reshaped to a 3x11 array for better readability. The result was saved as a `.npy` file, and both arrays were printed to verify their correctness.
 
 ## CODE ##
 ```python
@@ -55,4 +65,33 @@ print("The elements divisible by 3 are: \n", div)
 np.save("div_by_3.npy", div)
 ```
 ## OUTPUT ##
-![carbon (4)](https://github.com/user-attachments/assets/5db3990c-926b-4662-8e7d-2aa5ae3b276f)
+```
+The 10x10 array is given as: 
+ [[    1     4     9    16    25    36    49    64    81   100]
+ [  121   144   169   196   225   256   289   324   361   400]
+ [  441   484   529   576   625   676   729   784   841   900]
+ [  961  1024  1089  1156  1225  1296  1369  1444  1521  1600]
+ [ 1681  1764  1849  1936  2025  2116  2209  2304  2401  2500]
+ [ 2601  2704  2809  2916  3025  3136  3249  3364  3481  3600]
+ [ 3721  3844  3969  4096  4225  4356  4489  4624  4761  4900]
+ [ 5041  5184  5329  5476  5625  5776  5929  6084  6241  6400]
+ [ 6561  6724  6889  7056  7225  7396  7569  7744  7921  8100]
+ [ 8281  8464  8649  8836  9025  9216  9409  9604  9801 10000]]
+The elements divisible by 3 are: 
+ [[   9   36   81  144  225  324  441  576  729  900 1089]
+ [1296 1521 1764 2025 2304 2601 2916 3249 3600 3969 4356]
+ [4761 5184 5625 6084 6561 7056 7569 8100 8649 9216 9801]]
+```
+
+### BUILT WITH ###
+ - Jupyter Notebook
+
+### LIBRARIES USED ###
+ - PYTHON
+    - Numpy
+
+### AUTHOR ###
+ - Cedric Kurt Taguba - [@SuperCedric](https://github.com/SuperCedric)
+
+
+<p align="right">(<a href="#top">[🔼GO TO TOP]</a>)</p>
